@@ -140,7 +140,7 @@
   ],
   main-column-second-row: [
     - Developed a new index type to reduce query latency and showed 30% latency improvement on ClickBench benchmark
-    - Increased observability by adding per-query statistics to the developed UI
+    - Increased observability by adding per-query statistics to the developer UI
   ],
 )
 
