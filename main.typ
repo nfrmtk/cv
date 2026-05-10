@@ -139,7 +139,7 @@
     
   ],
   main-column-second-row: [
-    - Developed a new index type to reduce query latency and showed 30% latency improvement on ClickBench benchmark
+    - Developed a new index type to reduce query latency, achieving a 30% latency improvement on the ClickBench benchmark and up to 2× speedup on internal timeseries queries
     - Increased observability by adding per-query statistics to the developer UI
   ],
 )
@@ -154,16 +154,16 @@
     
   ],
   main-column-second-row: [
-    - Developed a new hash join operator implementation and showed the following improvements:
-      - Developed hash join is 10% faster than its predecessor on tpch-s10k benchmark, counting sum of all 22 queries latencies
-      - Developed hash join consumes 2 to 10 times less RAM than its predecessor
-      - Also it is stable and doesn't suffer from excessive memory usage leading to OOM errors, unlike its predecessor
-      - Also it is \~ 2 times faster than its predecessor
+    - Implemented a new hash join operator:
+      - ~2× faster than its predecessor at the operator level
+      - Yields 10% end-to-end query latency improvement on the TPC-H s10k benchmark (sum of all 22 query latencies)
+      - Consumes 2–10× less RAM
+      - Eliminates OOM errors caused by unbounded memory growth in the predecessor
   ],
 )
 
 
 == Misc
 
-All my code in YDB is available in the YDB git repository #link("https://github.com/ydb-platform/ydb/pulls/nfrmtk")[here].
+All my contributions to YDB are available in the YDB repository #link("https://github.com/ydb-platform/ydb/pulls/nfrmtk")[here].
 
