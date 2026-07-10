@@ -100,7 +100,7 @@
     #strong[MIPT], Masters in Computer Science -- Moscow
   ],
   [
-    Sept 2024 – present 
+    Sept 2024 – May 2026
   ],
   main-column-second-row: [
     - Thesis: Hybrid Hash Join implementation in YDB
@@ -113,7 +113,7 @@
     #strong[YSDA], Computer Science -- Moscow
   ],
   [
-    Sept 2024 – present 
+    Sept 2024 – May 2026
   ],
 
 )
@@ -166,4 +166,6 @@
 == Misc
 
 All my contributions to YDB are available in the YDB repository #link("https://github.com/ydb-platform/ydb/pulls/nfrmtk")[here].
+
+I also enjoy contributing to large open-source C++ projects, e.g. #link("https://github.com/apache/arrow/pull/50270")[Apache Arrow] and #link("https://github.com/llvm/llvm-project/pull/105647")[LLVM/Clang].
 
