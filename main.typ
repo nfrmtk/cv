@@ -5,7 +5,7 @@
 #show: rendercv.with(
   name: "Ivan Lykov",
   footer: context { [#emph[Ivan Lykov -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in May 2026] ],
+  top-note: [],
   locale-catalog-language: "en",
   page-size: "us-letter",
   page-top-margin: 0.7in,
