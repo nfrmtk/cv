@@ -139,7 +139,8 @@
     
   ],
   main-column-second-row: [
-    - Developed a new index type to reduce query latency, achieving a 30% latency improvement on the ClickBench benchmark and up to 2× speedup on internal timeseries queries
+    - Developed a new index type to reduce query latency, achieving a 30% latency improvement on the ClickBench benchmark and 2× walltime speedup on client's timeseries queries
+      - Studied index design in the most popular OLAP systems (ClickHouse, DuckDB, Snowflake), and built one similar to ClickHouse's
     - Increased observability by adding per-query statistics to the developer UI
   ],
 )
@@ -155,7 +156,8 @@
   ],
   main-column-second-row: [
     - Implemented a new hash join operator:
-      - ~2× faster than its predecessor at the operator level
+      - Studied join implementations in ClickHouse, DuckDB, TiDB, and Postgres before designing the operator
+      - ~2× faster than its predecessor at the operator level without spilling, ~6× faster with spilling to disk
       - Yields 10% end-to-end query latency improvement on the TPC-H s10k benchmark (sum of all 22 query latencies)
       - Consumes 2–10× less RAM
       - Eliminates OOM errors caused by unbounded memory growth in the predecessor
