@@ -6,6 +6,3 @@
 !.githooks/pre-commit
 !index.html
 !.nojekyll
-!.github/
-!.github/workflows/
-!.github/workflows/pages.yml
