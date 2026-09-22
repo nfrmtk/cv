@@ -135,8 +135,7 @@
     
   ],
   [
-    December 2025 – present
-    
+    December 2025 – August 2026
   ],
   main-column-second-row: [
     - Developed a new index type to reduce query latency, achieving a 30% latency improvement on the ClickBench benchmark and 2× walltime speedup on client's timeseries queries

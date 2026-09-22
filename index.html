@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ivan Lykov — CV</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex; flex-direction: column; height: 100vh;
+    background: #f5f5f5; color: #111;
+  }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.75rem 1.25rem; background: #111; color: #fff;
+  }
+  header h1 { font-size: 1rem; font-weight: 600; }
+  header a {
+    color: #111; background: #fff; text-decoration: none;
+    font-size: 0.875rem; font-weight: 600;
+    padding: 0.4rem 0.9rem; border-radius: 6px;
+  }
+  main { flex: 1; min-height: 0; }
+  object, iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .fallback { padding: 2rem; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Ivan Lykov — CV</h1>
+  <a href="LykovIvanCV.pdf" download>Download PDF</a>
+</header>
+<main>
+  <object data="LykovIvanCV.pdf" type="application/pdf">
+    <div class="fallback">
+      <p>Cannot display the PDF inline.</p>
+      <p><a href="LykovIvanCV.pdf">Open LykovIvanCV.pdf</a></p>
+    </div>
+  </object>
+</main>
+</body>
+</html>

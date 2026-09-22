@@ -1,0 +1,25 @@
+#!/bin/sh
+# pre-commit: пересобрать резюме из main.typ
+# Компилирует main.typ -> LykovIvanCV.pdf и добавляет PDF в коммит.
+set -e
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+# Работаем только если main.typ идёт в коммит, иначе нечего обновлять
+if ! git diff --cached --name-only --diff-filter=ACM | grep -qx "main.typ"; then
+  exit 0
+fi
+
+if ! command -v typst >/dev/null 2>&1; then
+  echo "pre-commit: typst не найден. Установи typst: https://github.com/typst/typst" >&2
+  exit 1
+fi
+
+echo "pre-commit: typst compile main.typ LykovIvanCV.pdf"
+if ! typst compile main.typ LykovIvanCV.pdf; then
+  echo "pre-commit: ошибка компиляции main.typ, коммит остановлен" >&2
+  exit 1
+fi
+
+git add LykovIvanCV.pdf
